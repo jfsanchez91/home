@@ -1,0 +1,6 @@
+# ignore all by default
+*
+
+# add this only
+!.gitignore
+
