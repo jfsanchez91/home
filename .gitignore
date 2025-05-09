@@ -4,6 +4,8 @@
 # add this only
 !.gitignore
 !.gitconfig
+!.zshrc
+!.zprofile
 
 # base config folder, but does not add everything inside
 !.config/
