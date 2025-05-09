@@ -26,3 +26,11 @@
 !.config/ghostty
 !.config/ghostty/config
 
+# local scripts
+!.local/
+!.local/bin/
+!.local/bin/.home_setup/
+!.local/bin/.home_setup/arch.sh
+!.local/bin/jwt
+
+
