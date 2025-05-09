@@ -12,3 +12,7 @@
 !.config/hypr/
 !.config/hypr/**
 
+!.config/waybar/
+!.config/waybar/style.css
+!.config/waybar/waybar.jsonc
+
