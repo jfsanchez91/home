@@ -23,7 +23,7 @@ echo "Setting up paru"
 
 # paru install
 echo "Installing extra packages (paru)"
-paru -Su --noconfirm --needed wlogout avizo visual-studio-code-bin
+paru -Su --noconfirm --needed wlogout avizo visual-studio-code-bin autojump
 
 echo "Installing ohmyzsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
