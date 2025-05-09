@@ -5,3 +5,10 @@
 !.gitignore
 !.gitconfig
 
+# base config folder, but does not add everything inside
+!.config/
+
+# hyprland config
+!.config/hypr/
+!.config/hypr/**
+
