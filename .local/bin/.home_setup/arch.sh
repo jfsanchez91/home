@@ -15,7 +15,7 @@ sudo pm -Rns --noconfirm kitty
 # setup paru
 echo "Setting up paru"
 (cd /tmp/ \
-	&& git clone https://aur.archlinux.org/paru.gi \
+	&& git clone https://aur.archlinux.org/paru.git \
 	&& cd paru \
 	&& makepkg -si \
 	&& paru --version \
