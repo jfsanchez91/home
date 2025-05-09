@@ -16,3 +16,8 @@
 !.config/waybar/style.css
 !.config/waybar/waybar.jsonc
 
+!.config/zellij/
+!.config/zellij/config.kdl
+!.config/zellij/layouts/
+!.config/zellij/layouts/default.kdl
+
