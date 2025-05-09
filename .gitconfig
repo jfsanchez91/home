@@ -1,0 +1,39 @@
+[init]
+  defaultBranch = master
+[user]
+  email = mail@jfsanchez.net
+  name = Jorge F. Sanchez
+  signingkey = 2BA8018153935B0FD64EC830E9401A2CDBA9946D
+[alias]
+  cm = commit -S -m
+  ca = commit --amend
+  ch = checkout
+  chb = checkout -b
+  co = checkout
+  cob = checkout -b
+  br = branch
+  ci = commit
+  st = status
+  s = status
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  lst = log -1 HEAD
+  graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  pr = pull --rebase
+  pf = push --force-with-lease
+  ps = push -o ci.skip
+  alias = config --get-regexp ^alias\\.
+  get = !sh -c 'branch=develop && git fetch origin && echo "Looking for differences between origin/$branch and $branch." && git diff --stat --color --shortstat  origin/develop develop'
+  conflict = !sh -c 'git merge $1 --no-ff --no-commit && git status && git show && git merge --abort' -
+  sync = !sh -c 'MASTER=$(basename `git symbolic-ref refs/remotes/origin/HEAD`) && git fetch --all --prune && git checkout $MASTER && git pull --rebase && git checkout -'
+  parent = log --pretty=%P -n 1
+  amend = !sh -c 'git add . && git commit --amend --no-edit'
+  uncommit = reset --soft HEAD~1
+  tree = graph
+[core]
+  filemode = false
+  autocrlf = input
+  editor = lvim 
+[commit]
+  gpgsign = true
+

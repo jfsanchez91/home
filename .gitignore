@@ -3,4 +3,5 @@
 
 # add this only
 !.gitignore
+!.gitconfig
 
