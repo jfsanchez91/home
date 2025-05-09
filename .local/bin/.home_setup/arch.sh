@@ -4,7 +4,7 @@ echo "Making pm link for pacman"
 sudo ln -s /usr/bin/pacman /usr/bin/pm
 
 echo "Installing base packages"
-sudo pm -Su --noconfirm --needed curl git zsh zip unzip otf-font-awesome ttf-noto-nerd base-devel blueman wl-clipboard cliphist hyprpaper hyprlock bat networkmanager network-manager-applet ghostty hyprland jq fzf
+sudo pm -Su --noconfirm --needed curl git zsh zip unzip otf-font-awesome base-devel blueman wl-clipboard cliphist hyprpaper hyprlock bat networkmanager network-manager-applet ghostty hyprland jq fzf ttf-jetbrains-mono-nerd
 
 echo "Settring up zsh as default shell"
 chsh $(which zsh)

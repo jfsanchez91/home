@@ -1,6 +1,8 @@
 background = #000000
-font-family='NotoMono Nerd Font'
+font-family='JetBrainsMono NF'
 # theme = tokyonight_night
 #theme = Monokai Remastered
 #theme = neobones_dark
 theme = UltraDark
+font-size = 14
+
