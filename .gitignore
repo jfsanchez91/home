@@ -21,3 +21,6 @@
 !.config/zellij/layouts/
 !.config/zellij/layouts/default.kdl
 
+!.config/ghostty
+!.config/ghostty/config
+
