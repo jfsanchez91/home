@@ -26,3 +26,4 @@ source /usr/share/autojump/autojump.zsh
 
 export PATH=$PATH:$HOME/.local/bin
 
+alias ff='fzf'
