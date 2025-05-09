@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if test -f ".local/.activate"; then
+  source .local/.activate
+fi
+
+# BIN_PATH=$(ls -d $HOME/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/*/bin | head -n 1)
+BIN_PATH=$HOME/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin
+("$BIN_PATH/idea.sh" "$@" >/dev/null 2>&1 &)
+
+

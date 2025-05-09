@@ -34,5 +34,7 @@
 !.local/bin/.home_setup/arch.sh
 !.local/bin/.home_setup/clone.sh
 !.local/bin/jwt
+!.local/bin/idea
+
 
 
