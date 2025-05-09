@@ -42,5 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 font-family='NotoMono Nerd Font'
-theme = tokyonight_night
-
+# theme = tokyonight_night
+#theme = Monokai Remastered
+#theme = neobones_dark
+theme = UltraDark
