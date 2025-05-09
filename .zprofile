@@ -18,3 +18,6 @@ bindkey '^[[3;5~' kill-word
 
 alias home='git --work-tree=$HOME --git-dir=$HOME/.home.git'
 
+# Added by Toolbox App
+export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
+
