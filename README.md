@@ -3,8 +3,11 @@
 ## setting up
 clone this repository into user $HOME
 ```sh
-git clone git@github.com:jfsanchez91/home.git $HOME && cd $HOME
+curl -s https://raw.githubusercontent.com/jfsanchez91/home/refs/heads/master/.local/bin/.home_setup/clone.sh | bash
 ```
+this clone script will initialize a bare git repository at $HOME/.home.git and then will fetch from remote.
+NOTE: any conflicting file will be overriden by this operation.
+
 
 ## arch setup
 execute arch home setup script
