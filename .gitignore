@@ -37,3 +37,7 @@
 !.local/bin/jwt
 !.local/bin/idea
 
+# wofi
+!.config/wofi/
+!.config/wofi/**
+
