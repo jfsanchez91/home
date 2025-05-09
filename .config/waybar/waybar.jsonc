@@ -1,25 +1,21 @@
 {
-    //"layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 40, // Waybar height (to be removed for auto height)
-    //"margin-top": 0,
-    //"margin-left": 0,
-    //"margin-right": 0,
-    // "width": 1280, // Waybar width
+    "height": 32, // Waybar height (to be removed for auto height)
     "spacing": 8, // Gaps between modules (4px)
     "modules-left": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        //"custom/vkeyboard",
         "idle_inhibitor",
         "pulseaudio",
-        "backlight",
         "battery",
+	"backlight",
         "cpu",
+	"memory",
+	"temperature",
         "tray",
         "power",
         "custom/power"
@@ -31,16 +27,7 @@
             "active": ""
         },
         "persistent-workspaces": {
-            "*": 5
-        }
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
+            "*": 6
         }
     },
     "idle_inhibitor": {
@@ -62,7 +49,7 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "interval": 60
+        "interval": 3 
     },
     "memory": {
         "format": "{}% "
@@ -81,8 +68,8 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "tooltip": false,
-        "format": "☀ {percent}%"
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -125,27 +112,8 @@
         "format-muted": "X {volume}%",
         "format-source": "{volume}% ",
         "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "░░░░░░░░░░",
-                "█░░░░░░░░░",
-                "██░░░░░░░░",
-                "███░░░░░░░",
-                "████░░░░░░",
-                "█████░░░░░",
-                "██████░░░░",
-                "███████░░░",
-                "████████░░",
-                "█████████░",
-                "██████████"
-            ]
-        },
         "interval": 60,
-        "on-click": "pamixer --toggle-mute",
+        "on-click": "pavucontrol",
         "on-scroll-up": "pamixer --allow-boost --set-limit 150 --increase 2",
         "on-scroll-down": "pamixer --allow-boost --set-limit 150 --decrease 2"
     },

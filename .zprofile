@@ -24,3 +24,5 @@ export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
 # autojump
 source /usr/share/autojump/autojump.zsh
 
+export PATH=$PATH:$HOME/.local/bin
+
