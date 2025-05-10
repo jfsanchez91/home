@@ -27,3 +27,7 @@ once this alias is in place, we can handle the $HOME config using the `home` com
 - home commit -m "New config file"
 - home push
 
+## setting up cursor theme (breese-dark, 24 size)
+```sh
+hyprctl setcursor breeze-dark 24
+```
