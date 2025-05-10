@@ -1,0 +1,7 @@
+#!/bin/bash
+CURRENT_LAYOUT=$(hyprctl getoption general:layout -j | jq -r '.str')
+if [ "$CURRENT_LAYOUT" = "dwindle" ]; then
+    hyprctl keyword general:layout master
+else
+    hyprctl keyword general:layout dwindle
+fi
