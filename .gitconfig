@@ -3,7 +3,6 @@
 [user]
   email = mail@jfsanchez.net
   name = Jorge F. Sanchez
-  signingkey = 2BA8018153935B0FD64EC830E9401A2CDBA9946D
 [alias]
   cm = commit -S -m
   ca = commit --amend
