@@ -35,3 +35,12 @@ git_current_branch() {
 git_default_branch() {
     echo $(git db)
 }
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+plugins=(
+    git
+    archlinux
+    pass
+)

@@ -5,7 +5,6 @@
 !README.md
 !.gitignore
 !.gitconfig
-!.zshrc
 !.zprofile
 
 # base config folder, but does not add everything inside
