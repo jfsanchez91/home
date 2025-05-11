@@ -27,3 +27,11 @@ source /usr/share/autojump/autojump.zsh
 export PATH=$PATH:$HOME/.local/bin
 
 alias ff='fzf'
+
+git_current_branch() {
+    echo $(git rev-parse --abbrev-ref HEAD)
+}
+
+git_default_branch() {
+    echo $(git db)
+}

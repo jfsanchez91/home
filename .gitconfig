@@ -30,6 +30,7 @@
   amend = !sh -c 'git add . && git commit --amend --no-edit'
   uncommit = reset --soft HEAD~1
   tree = graph
+  db = !git remote show origin | sed -n '/HEAD branch/s/.*: //p'
 [core]
   filemode = false
   autocrlf = input
