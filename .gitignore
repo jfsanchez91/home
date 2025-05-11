@@ -40,3 +40,8 @@
 !.config/wofi/
 !.config/wofi/**
 
+# wlogout
+!.config/wlogout/
+!.config/wlogout/layout
+!.config/wlogout/style.css
+
