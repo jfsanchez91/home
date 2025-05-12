@@ -44,3 +44,8 @@ plugins=(
     archlinux
     pass
 )
+
+# load specific host zsh configuration if present
+if test -e ~/.zhost; then
+    source ~/.zhost
+fi
