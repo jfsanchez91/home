@@ -1,0 +1,8 @@
+#!/bin/bash
+
+RETRIES=30
+while [[ "$(hyprctl dispatch closewindow "$1")" != "ok" && $RETRIES -gt 0 ]]; do
+    sleep 0.5
+    ((RETRIES--))
+done
+
