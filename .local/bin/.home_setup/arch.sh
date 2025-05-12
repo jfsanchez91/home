@@ -43,6 +43,7 @@ paru -Su --noconfirm --needed \
 	avizo \
 	autojump \
 	eza \
+	imv \
 	jq
 
 echo "Setting up zsh as default shell"
