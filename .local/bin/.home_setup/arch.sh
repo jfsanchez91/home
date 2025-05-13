@@ -47,7 +47,7 @@ paru -Su --noconfirm --needed \
 	adwaita-dark \
 	kvantum \
 	qt6ct \
-	lxappearance \
+	lxappearance-gtk3 \
 	adw-gtk-theme \
 	eza \
 	imv \
