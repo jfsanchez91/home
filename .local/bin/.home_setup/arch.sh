@@ -42,6 +42,13 @@ paru -Su --noconfirm --needed \
 	wlogout \
 	avizo \
 	autojump \
+	breeze \
+	breeze-icons \
+	adwaita-dark \
+	kvantum \
+	qt6ct \
+	lxappearance \
+	adw-gtk-theme \
 	eza \
 	imv \
 	jq
