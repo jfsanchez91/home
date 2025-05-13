@@ -49,10 +49,12 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "interval": 3 
+        "interval": 3,
+        "on-click": "xfce4-taskmanager"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "on-click": "xfce4-taskmanager"
     },
     "temperature": {
         // "thermal-zone": 2,

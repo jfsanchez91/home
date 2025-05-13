@@ -51,6 +51,7 @@ paru -Su --noconfirm --needed \
 	adw-gtk-theme \
 	eza \
 	imv \
+	xfce4-taskmanager \
 	jq
 
 echo "Setting up zsh as default shell"
