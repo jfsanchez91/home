@@ -52,13 +52,14 @@ paru -Su --noconfirm --needed \
 	eza \
 	imv \
 	xfce4-taskmanager \
+	thunar \
 	jq
 
 echo "Setting up zsh as default shell"
 chsh $(which zsh)
 
 echo "Remove no longer needed packages"
-sudo pm -Rns --noconfirm kitty
+sudo pm -Rns --noconfirm kitty dolphin
 
 echo "Installing ohmyzsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
