@@ -54,6 +54,8 @@ paru -Su --noconfirm --needed \
 	imv \
 	xfce4-taskmanager \
 	thunar \
+	firefox \
+	firefox-profile-launcher \
 	jq
 
 echo "Setting up zsh as default shell"
