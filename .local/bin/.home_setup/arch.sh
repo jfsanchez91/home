@@ -25,7 +25,8 @@ paru -Su --noconfirm --needed \
 	pavucontrol \
 	wofi \
 	hyprpaper \
-	otf-font-awesome 
+	otf-font-awesome \
+	lazygit
 
 paru -Su --noconfirm --needed \
 	otf-font-awesome \
