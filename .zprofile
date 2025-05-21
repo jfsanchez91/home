@@ -7,6 +7,7 @@ alias ls=lz
 alias ll='eza --color=always --icons=always --long --git -a -o'
 alias l=ll
 alias tree='lz --tree -I .git'
+alias lg='lazygit '
 
 export BAT_THEME='TwoDark'
 alias cat='bat --color=always'
@@ -50,3 +51,6 @@ plugins=(
 if test -e ~/.zhost; then
     source ~/.zhost
 fi
+
+alias load-env='source $PWD/.local/.activate' # dev alias to load local project environment, similar to python virtualenvs
+
