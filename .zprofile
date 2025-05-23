@@ -10,7 +10,7 @@ alias tree='lz --tree -I .git'
 alias lg='lazygit '
 
 export BAT_THEME='TwoDark'
-alias cat='bat --color=always'
+alias bat='bat --color=always'
 alias vim=nvim
 source <(fzf --zsh)
 
