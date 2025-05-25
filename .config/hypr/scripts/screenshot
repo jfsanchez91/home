@@ -18,10 +18,11 @@ else
     capture_region $FILE
 fi
 
-kolourpaint $FILE
-wl-copy < $FILE
-notify-send -e --expire-time=2500 "Image copied to clipboard"
-
+if [ -s $FILE ]; then
+    kolourpaint $FILE
+    wl-copy < $FILE
+    notify-send -e --expire-time=2500 "Image copied to clipboard"
+fi
 rm $FILE
 
 
