@@ -1,0 +1,27 @@
+#!/bin/sh
+
+function capture_region {
+    grim -c -g "$(slurp)" "$1"
+}
+
+function capture_fullscreen {
+    grim "$1"
+}
+
+FILE=$(mktemp)
+
+if [ "$1" = "region" ]; then
+    capture_region $FILE
+elif [ "$1" = "fullscreen" ]; then
+    capture_fullscreen $FILE
+else
+    capture_region $FILE
+fi
+
+kolourpaint $FILE
+wl-copy < $FILE
+notify-send -e --expire-time=2500 "Image copied to clipboard"
+
+rm $FILE
+
+
