@@ -56,6 +56,7 @@ paru -Su --noconfirm --needed \
 	thunar \
 	firefox \
 	firefox-profile-launcher \
+	kolourpaint \
 	jq
 
 echo "Setting up zsh as default shell"
