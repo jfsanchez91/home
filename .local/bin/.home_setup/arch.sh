@@ -59,15 +59,22 @@ paru -Su --noconfirm --needed \
 	kolourpaint \
 	jq
 
-echo "Setting up zsh as default shell"
-chsh $(which zsh)
+if [ $SHELL != "/usr/bin/zsh" ]; then
+	echo "Setting up zsh as default shell"
+	chsh $(which zsh)
+fi
 
 echo "Remove no longer needed packages"
 sudo pm -Rns --noconfirm kitty dolphin
 
-echo "Installing ohmyzsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ "$ZSH" != "$HOME/.oh-my-zsh" ]; then
+	echo "Installing ohmyzsh"
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
-#echo "Installing powerlevel10k"
-#git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+PW10K_PATH="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+if [ ! -d $PW10K_PATH ]; then
+	echo "Installing powerlevel10k"
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $PW10K_PATH
+fi
 
