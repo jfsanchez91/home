@@ -43,3 +43,8 @@
 !.config/wlogout/layout
 !.config/wlogout/style.css
 
+# docker-clean plugin
+!.docker/
+!.docker/cli-plugins/
+!.docker/cli-plugins/docker-clean
+
