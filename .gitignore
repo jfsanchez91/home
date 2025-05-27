@@ -13,6 +13,8 @@
 # hyprland config
 !.config/hypr/
 !.config/hypr/**
+.config/hypr/hyprland.host.conf
+
 
 !.config/waybar/
 !.config/waybar/style.css
