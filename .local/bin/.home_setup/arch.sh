@@ -57,6 +57,8 @@ paru -Su --noconfirm --needed \
 	firefox \
 	firefox-profile-launcher \
 	kolourpaint \
+	neovim \
+	ripgrep \
 	jq
 
 if [ $SHELL != "/usr/bin/zsh" ]; then
@@ -76,5 +78,11 @@ PW10K_PATH="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 if [ ! -d $PW10K_PATH ]; then
 	echo "Installing powerlevel10k"
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $PW10K_PATH
+fi
+
+NVIM_HOME="$HOME/.config/nvim"
+if [! -d $NVIM_HOME ]; then
+	echo "Setting up Neovim config at $NVIM_HOME"
+	git clone --depth=1 https://github.com/jfsanchez91/kickstart.nvim.git $NVIM_HOME
 fi
 
