@@ -81,7 +81,7 @@ if [ ! -d $PW10K_PATH ]; then
 fi
 
 NVIM_HOME="$HOME/.config/nvim"
-if [! -d $NVIM_HOME ]; then
+if [ ! -d $NVIM_HOME ]; then
 	echo "Setting up Neovim config at $NVIM_HOME"
 	git clone --depth=1 https://github.com/jfsanchez91/kickstart.nvim.git $NVIM_HOME
 fi
