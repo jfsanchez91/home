@@ -59,6 +59,7 @@ paru -Su --noconfirm --needed \
 	kolourpaint \
 	neovim \
 	ripgrep \
+	keyd \
 	jq
 
 if [ $SHELL != "/usr/bin/zsh" ]; then
@@ -84,5 +85,11 @@ NVIM_HOME="$HOME/.config/nvim"
 if [ ! -d $NVIM_HOME ]; then
 	echo "Setting up Neovim config at $NVIM_HOME"
 	git clone --depth=1 https://github.com/jfsanchez91/kickstart.nvim.git $NVIM_HOME
+fi
+
+KEYD_CONFIG_FILE=/etc/keyd/default.conf
+if [ ! -f $KEYD_CONFIG_FILE ]; then
+	echo "Setting up KeyD config"
+	sudo ln -s $HOME/.config/keyd/default.conf $KEYD_CONFIG_FILE
 fi
 

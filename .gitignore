@@ -50,3 +50,8 @@
 !.docker/cli-plugins/
 !.docker/cli-plugins/docker-clean
 
+
+# keyd
+!.config/keyd/
+!.config/keyd/default.conf
+
