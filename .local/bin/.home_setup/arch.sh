@@ -60,6 +60,7 @@ paru -Su --noconfirm --needed \
 	neovim \
 	ripgrep \
 	keyd \
+	git-delta \
 	jq
 
 if [ $SHELL != "/usr/bin/zsh" ]; then
