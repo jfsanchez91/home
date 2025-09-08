@@ -41,6 +41,7 @@
   db = !git remote show origin | sed -n '/HEAD branch/s/.*: //p'
   d = diff
   ds = diff --staged
+  this = !sh -c 'MASTER=$(basename `git symbolic-ref refs/remotes/origin/HEAD`) && git log --oneline $MASTER..HEAD'
 [core]
   filemode = false
   autocrlf = input
