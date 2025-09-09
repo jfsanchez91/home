@@ -54,6 +54,8 @@ paru -Su --noconfirm --needed \
 	imv \
 	xfce4-taskmanager \
 	thunar \
+	thunar-archive-plugin \
+	ark \
 	firefox \
 	firefox-profile-launcher \
 	kolourpaint \
