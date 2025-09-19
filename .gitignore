@@ -25,6 +25,7 @@
 
 !.config/ghostty
 !.config/ghostty/config
+!.config/ghostty/keybindings.config
 
 # local scripts
 !.local/

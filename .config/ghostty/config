@@ -1,14 +1,20 @@
 background = #000000
 font-family='JetBrainsMono NF'
-# theme = tokyonight_night
-#theme = Monokai Remastered
-#theme = neobones_dark
-theme = UltraDark
+
+theme = Catppuccin Mocha
+
 font-size = 16
-background-opacity = 0.9
+background-opacity = 1
+cursor-style=bar
+cursor-color=#148529
+#cursor-style-blink=false
+#shell-integration-features = no-cursor
 
 
 #font-feature = -calt
 font-feature = -liga
 #font-feature = -dlig
+
+
+config-file = keybindings.config
 
