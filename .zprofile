@@ -53,3 +53,5 @@ if test -e ~/.zhost; then
 fi
 
 alias loadenv='source $PWD/.local/.activate' # dev alias to load local project environment, similar to python virtualenvs
+alias sys-update='paru -Syu'
+
