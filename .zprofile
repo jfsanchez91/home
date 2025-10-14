@@ -47,6 +47,10 @@ plugins=(
     pass
 )
 
+# load util functions
+source ~/.zutils
+
+
 # load specific host zsh configuration if present
 if test -e ~/.zhost; then
     source ~/.zhost
@@ -54,13 +58,4 @@ fi
 
 alias loadenv='source $PWD/.local/.activate 2>/dev/null' # dev alias to load local project environment, similar to python virtualenvs
 alias sys-update='paru -Syu'
-
-function lsdisk() {
-    printf "Disk usage:\n"
-    # List block devices excluding tmpfs, loop, and cdrom
-    df -h -x tmpfs -x devtmpfs -x squashfs | awk '
-        NR==1 {print; next} 
-        /^\/dev\// {print}
-    '
-}
 

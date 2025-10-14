@@ -6,6 +6,7 @@
 !.gitignore
 !.gitconfig
 !.zprofile
+!.zutils
 
 # base config folder, but does not add everything inside
 !.config/
