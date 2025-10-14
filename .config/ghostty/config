@@ -10,11 +10,9 @@ cursor-color=#148529
 #cursor-style-blink=false
 #shell-integration-features = no-cursor
 
-
 #font-feature = -calt
 font-feature = -liga
 #font-feature = -dlig
-
 
 config-file = keybindings.config
 
