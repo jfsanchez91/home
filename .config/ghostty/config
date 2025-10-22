@@ -5,10 +5,10 @@ theme = Catppuccin Mocha
 
 font-size = 16
 background-opacity = 1
-cursor-style=bar
+cursor-style=block
 cursor-color=#148529
-#cursor-style-blink=false
-#shell-integration-features = no-cursor
+cursor-style-blink=false
+shell-integration-features = no-cursor,sudo
 
 #font-feature = -calt
 font-feature = -liga
