@@ -23,9 +23,6 @@ alias lazyhome='lazygit --work-tree=$HOME --git-dir=$HOME/.home.git'
 # Added by Toolbox App
 export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
 
-# autojump
-source /usr/share/autojump/autojump.zsh
-
 export PATH=$PATH:$HOME/.local/bin
 
 alias ff='fzf'
@@ -59,3 +56,5 @@ fi
 alias loadenv='source $PWD/.local/.activate 2>/dev/null' # dev alias to load local project environment, similar to python virtualenvs
 alias sys-update='paru -Syu'
 
+# zoxide (similar to autojump)
+eval "$(zoxide init zsh)"
