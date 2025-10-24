@@ -64,6 +64,7 @@ paru -Su --noconfirm --needed \
   ripgrep \
   keyd \
   git-delta \
+  uv \
   jq
 
 if [ $SHELL != "/usr/bin/zsh" ]; then
@@ -96,3 +97,6 @@ if [ ! -f $KEYD_CONFIG_FILE ]; then
   echo "Setting up KeyD config"
   sudo ln -s $HOME/.config/keyd/default.conf $KEYD_CONFIG_FILE
 fi
+
+echo "Installing uv tools"
+uv tool install jrnl # journal
