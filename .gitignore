@@ -37,6 +37,8 @@
 !.local/bin/.home_setup/clone.sh
 !.local/bin/jwt
 !.local/bin/idea
+!.local/bin/jrnl_daily.sh
+
 
 # wofi
 !.config/wofi/

@@ -58,3 +58,12 @@ alias sys-update='paru -Syu'
 
 # zoxide (similar to autojump)
 eval "$(zoxide init zsh)"
+
+# load daily journal
+# Only run in interactive terminals (not in GUI login shells)
+if [[ $- == *i* ]] && [[ -t 0 ]]; then
+    ~/.local/bin/jrnl_daily.sh
+fi
+
+alias j='jrnl '
+
