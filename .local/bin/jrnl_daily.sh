@@ -14,6 +14,7 @@ fi
 
 # Time check (07:00 <= time < 17:00)
 hour=$(date +%H)
+hour=$((10#$hour))
 if ((hour < 7 || hour >= 17)); then
   exit 0
 fi
