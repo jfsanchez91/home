@@ -1,28 +1,15 @@
 #!/bin/sh
 
-function capture_region {
-    grim -c -g "$(slurp)" "$1"
+capture_region() {
+  grim -c -g "$(slurp -o -c '#ff0000ff')" -t ppm - | satty -f -
 }
 
-function capture_fullscreen {
-    grim "$1"
+capture_fullscreen() {
+  grim -t ppm - | satty -f -
 }
 
-FILE=$(mktemp)
-
-if [ "$1" = "region" ]; then
-    capture_region $FILE
-elif [ "$1" = "fullscreen" ]; then
-    capture_fullscreen $FILE
+if [ "$1" = "fullscreen" ]; then
+  capture_fullscreen
 else
-    capture_region $FILE
+  capture_region
 fi
-
-if [ -s $FILE ]; then
-    kolourpaint $FILE
-    wl-copy < $FILE
-    notify-send -e --expire-time=2500 "Image copied to clipboard"
-fi
-rm $FILE
-
-

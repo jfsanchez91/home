@@ -60,6 +60,7 @@ paru -Su --noconfirm --needed \
   firefox \
   firefox-profile-launcher \
   kolourpaint \
+  satty \
   neovim \
   ripgrep \
   keyd \
