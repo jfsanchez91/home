@@ -49,6 +49,11 @@
 !.config/wlogout/layout
 !.config/wlogout/style.css
 
+# satty (screenshots)
+!.config/satty/
+!.config/satty/config.toml
+!.config/satty/overrides.css
+
 # docker-clean plugin
 !.docker/
 !.docker/cli-plugins/
