@@ -65,6 +65,7 @@ paru -Su --noconfirm --needed \
   ripgrep \
   keyd \
   git-delta \
+  doublecmd \
   uv \
   jq
 
