@@ -54,7 +54,7 @@ if test -e ~/.zhost; then
 fi
 
 alias loadenv='source $PWD/.local/.activate 2>/dev/null' # dev alias to load local project environment, similar to python virtualenvs
-alias sys-update='paru -Syu'
+alias sys-update='yay -Syu'
 
 # zoxide (similar to autojump)
 eval "$(zoxide init zsh)"

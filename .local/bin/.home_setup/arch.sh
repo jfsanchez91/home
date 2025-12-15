@@ -3,19 +3,19 @@
 echo "Installing base packages"
 sudo pacman -Su --noconfirm --needed curl git zip unzip base-devel
 
-if ! command -v paru 2>&1 >/dev/null; then
-  echo "Setting up paru"
+if ! command -v yay 2>&1 >/dev/null; then
+  echo "Setting up yay"
   (
     cd /tmp/ &&
-      git clone https://aur.archlinux.org/paru.git &&
-      cd paru &&
+      git clone https://aur.archlinux.org/yay-bin.git &&
+      cd yay-bin &&
       makepkg -si
   )
 fi
-paru --version
+yay --version
 
 echo "Installing hyprland env"
-paru -Su --noconfirm --needed \
+yay -Su --noconfirm --needed \
   zsh \
   ghostty \
   zellij \
@@ -29,7 +29,7 @@ paru -Su --noconfirm --needed \
   otf-font-awesome \
   lazygit
 
-paru -Su --noconfirm --needed \
+yay -Su --noconfirm --needed \
   otf-font-awesome \
   blueman \
   wl-clipboard \
