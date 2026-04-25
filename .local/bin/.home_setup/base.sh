@@ -82,8 +82,8 @@ fi
 # =========================
 NVIM_HOME="$HOME/.config/nvim"
 if [ ! -d "$NVIM_HOME" ]; then
-  echo "Installing Neovim config"
-  git clone --depth=1 https://github.com/jfsanchez91/kickstart.nvim.git "$NVIM_HOME"
+  echo "Installing Neovim config (LazyVim)"
+  git clone https://github.com/LazyVim/starter $NVIM_HOME
 fi
 
 # =========================
